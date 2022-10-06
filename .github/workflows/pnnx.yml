@@ -37,7 +37,7 @@ jobs:
       run: |
         pip install torch==${{ matrix.torch-version }}+cpu torchvision==${{ matrix.torchvision-version }}+cpu -f https://download.pytorch.org/whl/torch_stable.html
 
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3.1.0
       with:
         submodules: true
 
