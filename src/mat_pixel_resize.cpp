@@ -212,8 +212,8 @@ void resize_bilinear_c1(const unsigned char* src, int srcw, int srch, int srcstr
     const int INTER_RESIZE_COEF_BITS = 11;
     const int INTER_RESIZE_COEF_SCALE = 1 << INTER_RESIZE_COEF_BITS;
 
-    double scale_x = (double)srcw / w;
-    double scale_y = (double)srch / h;
+    float scale_x = (float)srcw / w;
+    float scale_y = (float)srch / h;
 
     int* buf = new int[w + h + w + h];
 
@@ -378,8 +378,8 @@ void resize_bilinear_c2(const unsigned char* src, int srcw, int srch, int srcstr
     const int INTER_RESIZE_COEF_BITS = 11;
     const int INTER_RESIZE_COEF_SCALE = 1 << INTER_RESIZE_COEF_BITS;
 
-    double scale_x = (double)srcw / w;
-    double scale_y = (double)srch / h;
+    float scale_x = (float)srcw / w;
+    float scale_y = (float)srch / h;
 
     int* buf = new int[w + h + w + h];
 
@@ -599,8 +599,8 @@ void resize_bilinear_c3(const unsigned char* src, int srcw, int srch, int srcstr
     const int INTER_RESIZE_COEF_BITS = 11;
     const int INTER_RESIZE_COEF_SCALE = 1 << INTER_RESIZE_COEF_BITS;
 
-    double scale_x = (double)srcw / w;
-    double scale_y = (double)srch / h;
+    float scale_x = (float)srcw / w;
+    float scale_y = (float)srch / h;
 
     int* buf = new int[w + h + w + h];
 
@@ -831,8 +831,8 @@ void resize_bilinear_c4(const unsigned char* src, int srcw, int srch, int srcstr
     const int INTER_RESIZE_COEF_BITS = 11;
     const int INTER_RESIZE_COEF_SCALE = 1 << INTER_RESIZE_COEF_BITS;
 
-    double scale_x = (double)srcw / w;
-    double scale_y = (double)srch / h;
+    float scale_x = (float)srcw / w;
+    float scale_y = (float)srch / h;
 
     int* buf = new int[w + h + w + h];
 
