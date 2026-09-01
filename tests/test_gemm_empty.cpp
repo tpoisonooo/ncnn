@@ -16,14 +16,14 @@
 static int test_gemm_empty_dynamic_ab(int M, int N, int K)
 {
     ncnn::ParamDict pd;
-    pd.set(2, 0);  // transA
-    pd.set(3, 1);  // transB
-    pd.set(4, 0);  // constantA
-    pd.set(5, 0);  // constantB
-    pd.set(6, 0);  // constantC
-    pd.set(7, M);  // constantM
-    pd.set(8, N);  // constantN
-    pd.set(9, K);  // constantK
+    pd.set(2, 0); // transA
+    pd.set(3, 1); // transB
+    pd.set(4, 0); // constantA
+    pd.set(5, 0); // constantB
+    pd.set(6, 0); // constantC
+    pd.set(7, M); // constantM
+    pd.set(8, N); // constantN
+    pd.set(9, K); // constantK
     pd.set(10, -1);
     pd.set(11, 0); // output_N1M
     pd.set(14, 0); // output_transpose
@@ -115,14 +115,14 @@ static int test_gemm_empty_dynamic_ab(int M, int N, int K)
 static int test_gemm_empty_constant_b(int M, int N, int K)
 {
     ncnn::ParamDict pd;
-    pd.set(2, 0);  // transA
-    pd.set(3, 1);  // transB
-    pd.set(4, 0);  // constantA
-    pd.set(5, 1);  // constantB
-    pd.set(6, 0);  // constantC
-    pd.set(7, M);  // constantM
-    pd.set(8, N);  // constantN
-    pd.set(9, K);  // constantK
+    pd.set(2, 0); // transA
+    pd.set(3, 1); // transB
+    pd.set(4, 0); // constantA
+    pd.set(5, 1); // constantB
+    pd.set(6, 0); // constantC
+    pd.set(7, M); // constantM
+    pd.set(8, N); // constantN
+    pd.set(9, K); // constantK
     pd.set(10, -1);
     pd.set(11, 0); // output_N1M
     pd.set(14, 0); // output_transpose
@@ -198,14 +198,14 @@ static int test_gemm_empty_constant_b(int M, int N, int K)
 static int test_gemm_empty_constant_a(int M, int N, int K)
 {
     ncnn::ParamDict pd;
-    pd.set(2, 0);  // transA
-    pd.set(3, 1);  // transB
-    pd.set(4, 1);  // constantA
-    pd.set(5, 0);  // constantB
-    pd.set(6, 0);  // constantC
-    pd.set(7, M);  // constantM
-    pd.set(8, N);  // constantN
-    pd.set(9, K);  // constantK
+    pd.set(2, 0); // transA
+    pd.set(3, 1); // transB
+    pd.set(4, 1); // constantA
+    pd.set(5, 0); // constantB
+    pd.set(6, 0); // constantC
+    pd.set(7, M); // constantM
+    pd.set(8, N); // constantN
+    pd.set(9, K); // constantK
     pd.set(10, -1);
     pd.set(11, 0); // output_N1M
     pd.set(14, 0); // output_transpose
@@ -283,14 +283,14 @@ static int test_gemm_empty_constant_ab(int M, int N, int K)
     // constant A and B: bottom_blobs may be an empty vector, the guard must
     // not dereference it nor reject the valid packed constant data
     ncnn::ParamDict pd;
-    pd.set(2, 0);  // transA
-    pd.set(3, 1);  // transB
-    pd.set(4, 1);  // constantA
-    pd.set(5, 1);  // constantB
-    pd.set(6, 0);  // constantC
-    pd.set(7, M);  // constantM
-    pd.set(8, N);  // constantN
-    pd.set(9, K);  // constantK
+    pd.set(2, 0); // transA
+    pd.set(3, 1); // transB
+    pd.set(4, 1); // constantA
+    pd.set(5, 1); // constantB
+    pd.set(6, 0); // constantC
+    pd.set(7, M); // constantM
+    pd.set(8, N); // constantN
+    pd.set(9, K); // constantK
     pd.set(10, -1);
     pd.set(11, 0); // output_N1M
     pd.set(14, 0); // output_transpose

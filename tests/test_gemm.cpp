@@ -14,14 +14,14 @@ static int test_gemm_empty_bottom(int M, int N, int K)
     // so use create_layer_naive to exercise the base implementation
 
     ncnn::ParamDict pd;
-    pd.set(2, 0);  // transA
-    pd.set(3, 1);  // transB
-    pd.set(4, 0);  // constantA
-    pd.set(5, 0);  // constantB
-    pd.set(6, 0);  // constantC
-    pd.set(7, M);  // constantM
-    pd.set(8, N);  // constantN
-    pd.set(9, K);  // constantK
+    pd.set(2, 0); // transA
+    pd.set(3, 1); // transB
+    pd.set(4, 0); // constantA
+    pd.set(5, 0); // constantB
+    pd.set(6, 0); // constantC
+    pd.set(7, M); // constantM
+    pd.set(8, N); // constantN
+    pd.set(9, K); // constantK
     pd.set(10, -1);
     pd.set(11, 0); // output_N1M
     pd.set(14, 0); // output_transpose
@@ -154,14 +154,14 @@ static int test_gemm_empty_bottom_vulkan(int M, int N, int K)
     // instead of SIGFPE on the elemsize division with elempack == 0
 
     ncnn::ParamDict pd;
-    pd.set(2, 0);  // transA
-    pd.set(3, 1);  // transB
-    pd.set(4, 0);  // constantA
-    pd.set(5, 1);  // constantB
-    pd.set(6, 0);  // constantC
-    pd.set(7, M);  // constantM
-    pd.set(8, N);  // constantN
-    pd.set(9, K);  // constantK
+    pd.set(2, 0); // transA
+    pd.set(3, 1); // transB
+    pd.set(4, 0); // constantA
+    pd.set(5, 1); // constantB
+    pd.set(6, 0); // constantC
+    pd.set(7, M); // constantM
+    pd.set(8, N); // constantN
+    pd.set(9, K); // constantK
     pd.set(10, -1);
     pd.set(11, 0); // output_N1M
     pd.set(14, 0); // output_transpose

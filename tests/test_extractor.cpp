@@ -14,14 +14,13 @@
 //   Input in0 -> Gemm g4 (B = MemoryData B4) -> out4
 //   Input in0 -> Gemm g8 (B = MemoryData B8) -> out8
 // extracting both outputs with a single extractor must give valid results
-static const char* param_data =
-    "7767517\n"
-    "5 5\n"
-    "Input            in0            0 1 in0\n"
-    "MemoryData       B4             0 1 B4 0=4 1=2\n"
-    "MemoryData       B8             0 1 B8 0=4 1=8\n"
-    "Gemm             g4             2 1 in0 B4 out4 0=1.0 1=0.0 3=1\n"
-    "Gemm             g8             2 1 in0 B8 out8 0=1.0 1=0.0 3=1\n";
+static const char* param_data = "7767517\n"
+                                "5 5\n"
+                                "Input            in0            0 1 in0\n"
+                                "MemoryData       B4             0 1 B4 0=4 1=2\n"
+                                "MemoryData       B8             0 1 B8 0=4 1=8\n"
+                                "Gemm             g4             2 1 in0 B4 out4 0=1.0 1=0.0 3=1\n"
+                                "Gemm             g8             2 1 in0 B8 out8 0=1.0 1=0.0 3=1\n";
 
 static ncnn::Mat gemm_ref(const ncnn::Mat& A, const ncnn::Mat& B)
 {
